@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 
 function useInputValue(defaultValue = '') {
-  const [value, setValue] = useState(defaultValue)
+  const [value, setValue] = useState(defaultValue);
 
   return {
     bind: {
-    value,
-    onChange: event => setValue(event.target.value)
+      value,
+      onChange: event => setValue(event.target.value)
     },
     clear: () => setValue(''),
     value: () => value
@@ -14,14 +14,14 @@ function useInputValue(defaultValue = '') {
 }
 
 export default function AddNote({ onCreate }) {
-  const input = useInputValue('')
+  const input = useInputValue('');
 
-  function submitHandler(event){
-    event.preventDefault()
-    
-    if(input.value().trim()) {
-      onCreate(input.value())
-      input.clear()
+  function submitHandler(event) {
+    event.preventDefault();
+
+    if (input.value().trim()) {
+      onCreate(input.value());
+      input.clear();
     }
   }
 
@@ -31,4 +31,4 @@ export default function AddNote({ onCreate }) {
       <button className="btn" type="submit">Send</button>
     </form>
   )
-} 
+}

@@ -4,21 +4,22 @@ import AddNote from './AddNote'
 
 export default function BlogList() {
 
-  const [newNote, setNote] = React.useState([])
+  const [newNote, setNote] = React.useState([]);
 
-  function addNote(title){
+  function addNote(title) {
     setNote(newNote.concat([{
       title,
-      id: Date.now()
-    }]))
+      id: Date.now(),
+    }]));
   }
+
   return (
     <div className="view">
       <AddNote onCreate={addNote} />
-      {newNote.length? (
-      <BlogItem notes={newNote} />
+      {newNote.length ? (
+        <BlogItem notes={newNote} />
       ) : (
-      <p>Нет записей</p>
+        <p className="empty">Нет записей</p>
       )}
     </div>
   )

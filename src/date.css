@@ -5,35 +5,17 @@
 }
 
 .date {
-  height: 640px;
-  width: 360px;
-  top: 0;
+  height: 100vh;
   display: flex;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
-.time {
-  font-size: large;
-  /* margin: auto ; */
-  color:white;
-  font-family: 'Roboto', sans-serif;
-  margin-right: 180px;
+.clock {
+  font-family: sans-serif;
+  color: white;
+  text-shadow: 0 0 20px #0aafe6, 0 0 20px rgba(10, 175, 230, 0);
+  letter-spacing: 0.05em;
+  font-size: 80px;
+  padding: 5px 0;
 }
-
-.clock {  
-  font-family: sans-serif;  
-  color: #ffffff;  
-  text-align: center;    
-  left: 75%;  
-  top: 50%;  
-  -webkit-transform: translate(-50%, -50%);  
-  transform: translate(-50%, -50%);  
-  color: #daf6ff;  
-  text-shadow: 0 0 20px #0aafe6, 0 0 20px rgba(10, 175, 230, 0);  
-  }  
-   
-  .clock .time {  
-  letter-spacing: 0.05em;  
-  font-size: 80px;  
-  padding: 5px 0;  
-  }

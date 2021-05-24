@@ -8,18 +8,11 @@ html {
   font-family: 'Roboto', sans-serif;
 }
 
-/* body {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  overflow-x: hidden;
-} */
-
 .container {
   padding: 20px;
 }
 
-p {
+.empty {
   margin: 20px auto;
   text-align: center;
 }
@@ -35,13 +28,11 @@ textarea {
   border: none;
   box-shadow: 0px 2px 5px #999;
   width: 100%;
-  letter-spacing: 1px;
   padding: 4px 8px;
   font-family: 'Roboto', sans-serif;
 }
 
 textarea::placeholder {
-  font-size: 1em;
   font-style: italic;
 }
 
@@ -71,27 +62,7 @@ textarea::placeholder {
   border-radius: 5px;
 }
 
-/* .display {
-  display: flex;
-  width: 200vw;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0vw;
-} */
-
 .view {
-  width: 360px;
   height: 100vh;
   overflow-y: auto;
 }
-
-/* .display {
-  left: -100vw;
-} */
-
-.clock {position: absolute;}
-
-/* .right {
-  left: -100vw;
-} */

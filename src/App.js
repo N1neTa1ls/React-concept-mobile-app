@@ -12,17 +12,11 @@ import 'swiper/components/scrollbar/scrollbar.min.css';
 // install Swiper modules
 SwiperCore.use([ A11y]);
 
-
 function App() {
   return (
     <Swiper
       spaceBetween={50}
       slidesPerView={1}
-      // navigation
-      // pagination={{ clickable: true }}
-      // scrollbar={{ draggable: true }}
-      // onSwiper={(swiper) => console.log(swiper)}
-      // onSlideChange={() => console.log('slide change')}
     >
       <SwiperSlide><BlogList /></SwiperSlide>
       <SwiperSlide><Date /></SwiperSlide>
