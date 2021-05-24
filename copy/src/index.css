@@ -1,3 +1,17 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
 * {
   padding: 0;
   margin: 0;
@@ -8,15 +22,12 @@ html {
   font-family: 'Roboto', sans-serif;
 }
 
-/* body {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  overflow-x: hidden;
-} */
-
 .container {
   padding: 20px;
+}
+
+.view {
+  margin: 0 auto;
 }
 
 p {
@@ -26,7 +37,7 @@ p {
 
 .input {
   display: flex;
-  margin: 10px 10px;
+margin: 10px 10px;
 }
 
 textarea {
@@ -62,36 +73,6 @@ textarea::placeholder {
 }
 
 .output div {
-  margin-bottom: 10px;
+  margin-bottom: 25px;
   letter-spacing: 1px;
-  word-wrap: break-word;
-  border: 1px solid #ccc;
-  background: #eee;
-  padding: 10px;
-  border-radius: 5px;
 }
-
-/* .display {
-  display: flex;
-  width: 200vw;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0vw;
-} */
-
-.view {
-  width: 360px;
-  height: 100vh;
-  overflow-y: auto;
-}
-
-/* .display {
-  left: -100vw;
-} */
-
-.clock {position: absolute;}
-
-/* .right {
-  left: -100vw;
-} */

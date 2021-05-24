@@ -1,0 +1,16 @@
+.animation {
+  animation-duration: 1s;
+  animation-name: slidein;
+  background: white;
+  padding: 5px;
+  position: relative;
+}
+
+@keyframes slidein {
+  from {
+    margin-top: -20px;
+  }
+  to {
+    margin-top: 0px;
+  }
+}
